@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="Fees_Management.View.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+
+    <link href="../../Assets/Lib/css/bootstrap.min.css" rel="stylesheet" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="side-bar">
+            <img src="../../Assets/Images/logo%201.png" style="color: black;" class="logo-image" />
+            <div class="list-items" style="align-items: flex-start; height: 20vh !important;">
+               <i class="fa fa-address-book"><a href="Admin.aspx">DashBoard</a></i>
+                <i class="fa fa-address-book"><a href="StudentsLists.aspx">Groups</a></i>
+                 <i class="fa fa-address-book"><a href="InstallmentsList.aspx">List</a></i>
+
+            </div>
+           <i class="fa fa-address-book log"><a href="../../Log In.aspx">Log Out</a></i>
+
+        </div>
+        <div class="right-side">
+            <div class="header">
+                <%-- <div class="input-group new-input-group">
+                    <div class="form-outline">
+                        <input type="search" id="form2" class="form-control" placeholder="seacrh" />
+                      
+                    </div>
+                    <button type="button" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>--%>
+               <marquee><h2>Brihaspathi</h2></marquee>
+
+                <div class="header-icons-container">
+
+                    <asp:Image ID="Image1" runat="server" CssClass="header-image" />
+                </div>
+            </div>
+            <div class="main-body">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div class="footer">
+              footer
+            </div>
+
+        </div>
+
+    </form>
+</body>
+</html>

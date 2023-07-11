@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FeesMaster.master.cs" Inherits="Fees_Management.View.FeesMaster.FeesMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../../Assets/Lib/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Admin/StyleSheet1.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">     
+               <div class="side-bar">
+            <img src="../../Assets/Images/logo%201.png" />
+            <div class="list-items">
+                <i class="fa fa-address-book"><a href="DashBoard2.aspx">DashBoard</a></i>
+                <i class="fa fa-address-book"><a href="Cashear.aspx">Register</a></i>
+                <i class="fa fa-address-book"><a href="PayInstal.aspx">Pay Installments</a></i>
+            </div>
+            <i class="fa fa-address-book log"><a href="../../Log In.aspx">Log Out</a></i>
+        </div>
+        <div class="right-side">
+            <div class="header">
+               
+                <div class="header-icons-container">
+
+                    <asp:Image ID="Image1" runat="server" CssClass="header-image" />
+                </div>
+            </div>
+            <div class="main-body">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+            <div class="footer">             
+                   <h5>Footer</h5>
+               </div>           
+        </div>            
+    </form>
+</body>
+</html>
